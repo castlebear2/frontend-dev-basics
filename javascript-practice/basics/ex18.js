@@ -6,9 +6,9 @@
  * 
  */
 
-globalThis.name = '둘리'
+window.n = '둘리'
 console.log(global.n, n);
 
 var email = 'dooly@gamil.com';
-console.log(global.email. email);
+console.log(window.email.email);
 
