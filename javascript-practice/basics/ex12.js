@@ -28,12 +28,13 @@ Array.prototype.insert = function(index, value) {
         // });
         
         // 해결 방법2
-        // Function.prototpye.bind() 
+        // Function.prototpye.bind() 함수를 사용한다.
+        // 콜백 함수 블록 안의 this를 세팅할 수 있다.
         // value.forEach(function(e) {
         //     this.splice(index++, 0, e);
         // });
 
-        this;
+
         value.forEach(function(e) {
             this.splice(index++, 0, e);
         }.bind(this));
