@@ -49,5 +49,6 @@ i2.another = {
 
 console.log(i2);
 
-i1.another = {}; // 이렇게 하면 에러가 나야 되는데, 안나는 이유가 >>> 유사객체로 변환되기 때문이다... new Number(i1).another = {};
-console.log(i1.another);
+i1.another = {};            // 이렇게 하면 에러가 나야 되는데, 안나는 이유가 >>> 유사객체로 변환되기 때문이다... new Number(i1).another = {};
+console.log(i1.another);    // 유사객체로 변환된다. console.log(new Number(i1).another);
+

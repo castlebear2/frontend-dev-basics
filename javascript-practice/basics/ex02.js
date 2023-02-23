@@ -63,7 +63,7 @@ var a = new Array();
 var d = new Date();
 var o2 = {};
 var a2 = [];
-var n =    null;
+var n = null;
 
 
 console.log(i2 + ":" + typeof(i2)+ ":" + (i2 instanceof(Number)) );
