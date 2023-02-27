@@ -25,7 +25,7 @@ o.another.print();
 
 
 console.log("=== 확장(function 타입) ======");
-f.another ={
+f.another = {
     name: '마이콜',
     age: 20,
     print: function() {
