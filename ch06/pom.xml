@@ -9,5 +9,5 @@
   <packaging>war</packaging>
   <build>
 	  <finalName>ch06</finalName>
-	  </build>
+  </build>
 </project>

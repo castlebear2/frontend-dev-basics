@@ -3,26 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <script>
-	window.n = '둘리'
+	window.n = '둘리';
 	console.log(window.n, n);
 
 	var email = 'dooly@gamil.com';
-	console.log(window.email.email);
+	console.log(window.email, email);
 
-	setTimeout(function() {
-		var child = window.open("popup.html", "n-popup", "width=600, height=400");
-		
-		setTimeout(function(){
-			// 자식창의 내용 바꾸기
-			child.document.write("<h1>popup contents changed!</h1>");
-		}, 2000);
-		 
-		setTimeout(function(){
-			// 자식창의 내용 바꾸기
-			child.moveTo(200, 200);
-		}, 4000);
-		
+	setTimeout(function(){
+		window.open("popup.html", "n-popup", "width=600, height=400")
 	}, 2000);
+	
 </script>
 </head>
 <body>
