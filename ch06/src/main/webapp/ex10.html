@@ -5,35 +5,44 @@
 <title>Insert title here</title>
 <script>
 window.onload = function(){
-	//1. ID
+	// HTML 요소 건들기.
+	// 1. id
 	var header01 = document.getElementById('header-01');
 	var header02 = document.getElementById('header-02');
 	
-	//2. Tag Name
+	// 2. Tag Name
+	// 여러 개가 있기 때문에 배열로 받아야한다.
 	var h4s = document.getElementsByTagName("h4");
 	
 	
- 	//3. Class Name
- 	
- 	var h5s = document.getElementsByClassName("header");
- 	//4. CSS 선택자
-	var header07 = documnet.querySelector("#header-07");	
- 	var h6s = document.querySelectorAll(".header2");
- 	
-	setTimeout(function(){
+	// 3. Class Name
+	// 여러개 이기 때문에 이것도 배열로 나온다...!
+	var h5s = document.getElementsByClassName("header");
+	
+	// 4. CSS 선택자 (1번 2번은 필요가 없다. 4번이 있으니까.)
+	var header07 = document.querySelector("#header-07")
+	var h6s = document.querySelectorAll(".header2");
+	
+	
+	setTimeout(function() {
+		// ID
 		header01.innerText += " by getElementById()";
 		header02.innerText += " by getElementById()";
 		
-		h4s[0].innertext += " by getElementsByTagName()";
-		h4s[1].innertext += " by getElementsByTagName()";
+		// Tag Name
+		h4s[0].innerText += " by getElement's'ByTagName()";
+		h4s[1].innerText += " by getElement's'ByTagName()";
 		
-		h5s[0].innertext += " by getElementsByClassName()";
-		h5s[1].innertext += " by getElementsByClassName()";
+		// Class Name
+		h5s[0].innerText += " by getElement's'ClassName()";
+		h5s[1].innerText += " by getElement's'ClassName()";
 		
+		// CSS 선택자
 		header07.innerText += " by querySelector()";
-		
 		h6s[0].innerText += " by querySelectorAll()";
 		h6s[1].innerText += " by querySelectorAll()";
+		 
+		
 		
 		
 	}, 2000);
